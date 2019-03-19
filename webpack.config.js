@@ -1,39 +1,11 @@
-# typescript-frontend-sample2
-
-## Started
-
-### Install
-
-```bash
-# package.json の生成
-npm init --y
-
-# ツールのインストール
-npm install typescript tsc ts-loader webpack webpack-cli webpack-dev-server --save-dev
-npm install c3
-npm install @types/c3
-```
-
-### package.json
-
-```
-  "scripts": {
-    "build": "webpack --mode=development",
-    "start": "webpack-dev-server --mode=development --inline"
-  }
-```
-
-### webpack.config.js
-
-```js
 const path = require('path');
 module.exports = {
     // モジュールバンドルを行う起点となるファイルの指定
     // 指定できる値としては、ファイル名の文字列や、それを並べた配列やオブジェクト
-    // 下記はオブジェクトとして指定した例 
+    // 下記はオブジェクトとして指定した例
     entry: {
         bundle: './src/app.ts'
-    },  
+    },
     output: {
         // モジュールバンドルを行った結果を出力する場所やファイル名の指定
         // "__dirname"はこのファイルが存在するディレクトリを表すnode.jsで定義済みの定数
@@ -60,22 +32,3 @@ module.exports = {
         ]
     }
 }
-```
-
-### tsconfig.json
-
-```bash
-./node_modules/.bin/tsc --init
-```
-
-## Run
-
-```bash
-npm run-script start
-# OR
-npm run-script build
-```
-
----
-
-https://qiita.com/ochiochi/items/efdaa0ae7d8c972c8103

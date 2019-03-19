@@ -1,0 +1,33 @@
+{
+  "name": "typescript-frontend-sample2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apple-x-co/typescript-frontend-sample2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apple-x-co/typescript-frontend-sample2/issues"
+  },
+  "homepage": "https://github.com/apple-x-co/typescript-frontend-sample2#readme",
+  "devDependencies": {
+    "ts-loader": "^5.3.3",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/c3": "^0.6.3",
+    "c3": "^0.6.13"
+  }
+}
