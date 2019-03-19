@@ -56,7 +56,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"main": 0
+/******/ 		"bundle": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -147,22 +147,22 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./src/app.js","vendor"]);
+/******/ 	deferredModules.push(["./src/app.ts","vendor"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/app.js":
+/***/ "./src/app.ts":
 /*!********************!*\
-  !*** ./src/app.js ***!
+  !*** ./src/app.ts ***!
   \********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nexports.__esModule = true;\nvar c3 = __webpack_require__(/*! c3 */ \"./node_modules/c3/c3.js\");\nvar chart = c3.generate({\n    bindto: '#chart',\n    data: {\n        type: 'donut',\n        columns: [\n            ['良い感じ', 50],\n            ['ピンとこない', 50]\n        ]\n    },\n    donut: {\n        title: 'TypeScriptの印象は？'\n    }\n});\nsetTimeout(function () {\n    chart.load({\n        columns: [\n            ['良い感じ', 30],\n            ['ピンとこない', 30],\n            ['最高', 30]\n        ]\n    });\n}, 3000);\nsetTimeout(function () {\n    chart.unload({\n        ids: '最高'\n    });\n}, 5000);\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];\n    result[\"default\"] = mod;\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar c3 = __importStar(__webpack_require__(/*! c3 */ \"./node_modules/c3/c3.js\"));\nvar chart = c3.generate({\n    bindto: '#chart',\n    data: {\n        type: 'donut',\n        columns: [\n            ['良い感じ', 50],\n            ['ピンとこない', 50]\n        ]\n    },\n    donut: {\n        title: 'TypeScriptの印象は？'\n    }\n});\nsetTimeout(function () {\n    chart.load({\n        columns: [\n            ['良い感じ', 30],\n            ['ピンとこない', 30],\n            ['最高', 30]\n        ]\n    });\n}, 3000);\nsetTimeout(function () {\n    chart.unload({\n        ids: '最高'\n    });\n}, 5000);\n\n\n//# sourceURL=webpack:///./src/app.ts?");
 
 /***/ })
 

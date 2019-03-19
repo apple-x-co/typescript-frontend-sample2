@@ -71,10 +71,9 @@ module.exports = {
 ## Run
 
 ```bash
-./node_modules/.bin/tsc src/app.ts
-./node_modules/.bin/webpack src/app.js --output dist/bundle.js --mode=development
-
 npm run-script start
+# OR
+npm run-script build
 ```
 
 ---
